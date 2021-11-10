@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | Book Buy</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Poppins:display=swap|Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/grid.css">
+    <link rel="stylesheet" href="../assets/css/style_admin.css">
+    <link rel="stylesheet" href="../assets/css/responsive_base.css">
+    <link rel="stylesheet" href="../assets/css/responsive_admin.css">
+</head>
+
+<body>
+    <div class="app">
+        <header class="app__header">
+            <div class="grid wide">
+                <div class="app__header-wrapper">
+                    <div class="app-header__img hide-on-moblie">
+                        <img src="../assets/images/logo-new.png" alt="logo-new" srcset="">
+                    </div>
+                    <div class="app-header__search">
+                        <span class="material-icons-outlined">search</span>
+                        <input type="text" id="txt-search" name="txt-search" placeholder="Bạn muốn tìm gì?">
+                    </div>
+                    <a href="#" class="app-header__logout">
+                        <span class="material-icons-outlined">logout</span>
+                        <p class="hide-on-moblie">Đăng xuất</p>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div class="app__container">
+            <div class="app-content__linker">
+                <div class="grid wide">
+                    <ul class="app-content__linker-wrapper">
+                        <li><a href="#"><span class="material-icons-outlined">home</span>Trang chủ</a></li>
+                        <li><a href="#">/ Quản trị</a></li>
+                        <li><a href="#">/ Quản lý thông tin sách</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-3 m-12 c-12">
+                        <div class="app-container__menu">
+                            <div class="app-container-menu__user">
+                                <div class="app-container-menu-user__img">
+                                    <img src="../assets/images/5ef966aae04712194b56.jpg" alt="user-image">
+                                </div>
+                                <div class="app-container-menu-user__info">
+                                    <div class="app-container-menu-user-info__name">Nguyễn Quốc Khánh</div>
+                                    <div class="app-container-menu-user-info__email">quockhanh01091@gmail.com</div>
+                                </div>
+                            </div>
+                            <ul class="app-container-menu__control">
+                                <li class="app-container-menu-control__item active-color">
+                                    <a href="#">
+                                        <span class="material-icons-outlined">book</span>
+                                        Quản lý thông tin sách
+                                    </a>
+                                </li>
+                                <li class="app-container-menu-control__item">
+                                    <a href="#">
+                                        <span class="material-icons-outlined">category</span>
+                                        Quản lý danh mục sách
+                                    </a>
+                                </li>
+                                <li class="app-container-menu-control__item">
+                                    <a href="#">
+                                        <span class="material-icons-outlined">inventory</span>
+                                        Quản lý đơn đặt hàng
+                                    </a>
+                                </li>
+                                <li class="app-container-menu-control__item">
+                                    <a href="#">
+                                        <span class="material-icons-outlined">manage_accounts</span>
+                                        Quản lý tài khoản
+                                    </a>
+                                </li>
+                                <li class="app-container-menu-control__item">
+                                    <a href="#">
+                                        <span class="material-icons-outlined">question_answer</span>
+                                        Chat với khách hàng
+                                    </a>
+                                </li>
+                                <li class="app-container-menu-control__item">
+                                    <a href="#">
+                                        <span class="material-icons-outlined">info</span>
+                                        Thông tin cửa hàng
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-9 m-12 c-12">
+                        <div class="app-container__content">
+                            <div class="app-container-content__text">Danh sách thông tin sách</div>
+                            <div class="app-container-content__search">
+                                <!-- Re-use header search -->
+                                <div class="app-header__search" style="background-color: transparent;">
+                                    <span class="material-icons-outlined">search</span>
+                                    <input type="hidden" name="id-cate" id="id-cate" value="">
+                                    <input type="text" id="txt-search" name="txt-search" placeholder="Nhập mã sách hoặc tên sách muốn tìm...">
+                                </div>
+                                <!-- Re-use header filter home page -->
+                                <div class="app-header-main-search__filter">
+                                    <div class="app-header-main-search-filter__current">
+                                        <p>Tất cả</p>
+                                        <span class="material-icons-outlined">unfold_more</span>
+                                    </div>
+                                    <ul class="app-header-main-search-filter__choose">
+                                        <li class="app-header-main-search-filter-choose__item active-color">Tất cả</li>
+                                        <li class="app-header-main-search-filter-choose__item">Truyện tranh</li>
+                                        <li class="app-header-main-search-filter-choose__item">Kinh tế</li>
+                                        <li class="app-header-main-search-filter-choose__item">Xã hội</li>
+                                        <li class="app-header-main-search-filter-choose__item">Văn hóa - Chính trị</li>
+                                        <li class="app-header-main-search-filter-choose__item">Ngoại ngữ</li>
+                                        <li class="app-header-main-search-filter-choose__item">Công nghệ</li>
+                                        <li class="app-header-main-search-filter-choose__item">Lập trình</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="app-container-content__search-text active-color">Nội dung tìm kiếm: AAA - Danh mục: Tất cả</div>
+                            <div class="app-container-content__btn-add">
+                                <label for="cbo-show-modal" class="app__btn" onclick="showCreate()" style="display: inline-block;">+ Thêm mới sách</label>
+                            </div>
+                            <div class="app-container-content__list">
+                                <table>
+                                    <thead>
+                                        <th>Mã sách</th>
+                                        <th>Ảnh</th>
+                                        <th>Thông tin</th>
+                                        <th>Giá bán</th>
+                                        <th>Số lượng</th>
+                                        <th>Thao tác</th>
+                                    </thead>
+                                    <!-- Render data -->
+                                    <tbody></tbody>
+                                </table>
+
+                                <input type="checkbox" id="cbo-show-modal" hidden>
+                                <label for="cbo-show-modal" class="modal">
+                                    <!-- Prefix class: create: modal__input-create; edit: modal__input-edit -->
+                                    <label for="none" class="modal__input modal__input-edit">
+                                        <form action="" method="POST">
+                                            <div class="modal-input__text hide-on-create">
+                                                <h2>Chi tiết thông tin sách!</h2>
+                                                <p>Bạn có thể cập nhật hoặc xóa sách</p>
+                                            </div>
+                                            <div class="modal-input__text hide-on-edit">
+                                                <h2>Thêm sách mới!</h2>
+                                                <p>Bạn có thể thêm sách</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col l-8">
+                                                    <div class="modal-input__info">
+                                                        <div class="modal-input__group">
+                                                            <i class="fas fa-book"></i>
+                                                            <input type="text" name="book-name" id="book-name" placeholder="Nhập tên sách..." required>
+                                                        </div>
+                                                        <div class="modal-input__group">
+                                                            <i class="fas fa-user-shield"></i>
+                                                            <input type="text" name="book-author" id="book-author" placeholder="Nhập tác giả..." required>
+                                                        </div>
+                                                        <div class="modal-input__group">
+                                                            <i class="fas fa-bookmark"></i>
+                                                            <select name="book-cate" id="book-cate">
+                                                                <option value="1">Sách thiếu nhi</option>
+                                                                <option value="2">Sách thiếu nhi</option>
+                                                                <option value="3">Sách thiếu nhi</option>
+                                                                <option value="4">Sách thiếu nhi</option>
+                                                                <option value="5">Sách thiếu nhi</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="modal-input__group" style="gap: 0 4px; background-color: transparent;">
+                                                            <div class="modal-input__group" style="margin: 0;">
+                                                                <i class="fas fa-money-bill-alt"></i>
+                                                                <input type="text" name="book-current-price" id="book-current-price" placeholder="Nhập giá bán..." required>
+                                                            </div>
+                                                            <div class="modal-input__group" style="margin: 0;">
+                                                                <i class="far fa-money-bill-alt"></i>
+                                                                <input type="text" name="book-old-price" id="book-old-price" placeholder="Nhập giá chưa giảm..." required>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-input__group">
+                                                            <i class="fas fa-ticket-alt"></i>
+                                                            <input type="text" name="book-sale" id="book-sale" placeholder="Nhập phần trăm giảm giá..." required>
+                                                        </div>
+                                                        <div class="modal-input__group">
+                                                            <i class="fas fa-sort-numeric-up-alt"></i>
+                                                            <input type="text" name="book-quantity" id="book-quantity" placeholder="Nhập số lượng..." required>
+                                                        </div>
+                                                        <div class="modal-input__group">
+                                                            <i class="fas fa-file-alt"></i>
+                                                            <input type="text" name="book-description" id="book-description" placeholder="Nhập mô tả..." required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col l-4">
+                                                    <div class="modal-input__img">
+                                                        <input type="file" name="book-img" id="book-img" hidden>
+                                                        <img src="../assets/images/tho-peter-cuoc-giai-cuu-ngay-giang-sinh_32047_1.png" alt="">
+                                                        <span class="app__btn">Chọn ảnh</span>
+                                                        <p>(Kích thước ảnh tối đa 1MB)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-input__btn">
+                                                <span class="hide-on-edit" style="flex: 1;" onclick="createBook()">Thêm mới</span>
+                                                <span class="hide-on-create" style="flex: 2;">Cập nhật</span>
+                                                <span class="hide-on-create" style="flex: 1;" onclick="">Xóa</span>
+                                            </div>
+                                        </form>
+                                    </label>
+                                </label>
+                            </div>
+                            
+                            <div class="grid wide">
+                                <div class="row">
+                                    <div class="col l-12 m-12 c-12">
+                                        <!-- Pagination -->
+                                        <div class="app-content__pagination"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="app__footer">
+            <p>Powered by <a href="https://github.com/kasisoiqk">Khanh dz 2021</a></p>
+        </footer>
+    </div>
+
+    <script src="../assets/js/main_base.js"></script>
+    <script src="../assets/js/main_admin.js"></script>
+</body>
+
+</html>

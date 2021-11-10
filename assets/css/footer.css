@@ -1,0 +1,128 @@
+
+*{
+    box-sizing: border-box ;
+}
+footer {
+    line-height: 18px;
+    background: #f8f8f8;
+    position: relative;
+    color: #333;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+b, strong {
+    font-weight: bold;
+}
+li {
+    list-style-type: none;
+    display: list-item;
+
+}
+footer {
+    background-color: var(--background-header-color);
+    padding: 24px 0;
+}
+.bg-bottom-ecaward {
+    width: 564px;
+    margin: 30px auto 30px auto;
+    background: url("https://bookbuy.vn/Images/frontend/base/bg-bottom-ecaward.jpg") no-repeat;
+    height: 28px;
+}
+.bg-bottom-ecaward ul {
+    list-style-type: none;
+    padding-left: 35px;
+}
+.bg-bottom-ecaward li {
+    list-style-type: none;
+    padding: 6px 20px;
+    float: left;
+}
+.bg-bottom-ecaward a {
+    color: #828282;
+    font-size: 14px;
+    font-family: centur;
+}
+.categories {
+    width: 100%;
+    border-top: 1px solid #000;
+    max-width: 1140px;
+    margin: 0 auto 50px;
+    height: 250px;
+}
+.categories ul {
+    list-style-type: none;
+    font-size: 14px;
+    margin: 0 auto;
+    width: 100%;
+}
+.categories ul li {
+    float: left;
+    padding: 10px 0 0 0;
+}
+.categories ul li a {
+    text-decoration: none;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.letter-bottom .form-letter {
+    padding: 10px;
+}
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.row form-letter{
+    display: inline-block;
+}
+.letter-bottom .canh-cam-letter {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+.letter-bottom .head-text-letter {
+    font-size: 20px;
+    color: #f15c22;
+    padding: 10px 0;
+    font-weight: bold;
+}
+.letter-bottom .canh-cam-form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.letter-bottom .canh-cam-form .entry-form #submit-letter {
+    width: 100%;
+    padding: 5px;
+    float: left;
+    padding-right: 205px;
+}
+.letter-bottom .canh-cam-form .entry-form .action-submit {
+    position: absolute;
+    right: 0;
+    padding: 0 5px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    margin: 2px;
+    background: #ff681d;
+    padding-right: 0;
+    width: 200px;
+}
+.letter-bottom .canh-cam-form .entry-form .action-submit li {
+    float: left;
+    padding: 0 20px;
+    border-right: solid 1px #ccc;
+    list-style: none;
+}
+.letter-bottom .canh-cam-form .entry-form .action-submit li a {
+    color: #fff;
+    text-decoration: none;
+}
+

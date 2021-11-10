@@ -1,0 +1,34 @@
+/* Mobile */
+@media (max-width: 739px) {
+}
+
+/* Mobile - Tablet */
+@media (max-width: 1024px) {
+    .app-content__pagination a {
+        margin: 0 1px;
+    }
+}
+
+/* >= Tablet */
+@media (min-width: 740px) {
+    
+}
+
+
+/* PC medium resolution > */
+@media (min-width: 1113px) {
+    
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+}
+
+/* PC low resolution */
+@media (min-width: 1024px) and (max-width: 1239px) {
+    
+}
+
+/* > low resolution */
+@media (min-width: 1024px) {
+}

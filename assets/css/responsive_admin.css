@@ -1,0 +1,45 @@
+/* Mobile */
+@media (max-width: 739px) {
+    .hide-on-moblie {
+        display: none;
+    }
+    .app__header-wrapper {
+        gap: 0 2px;
+    }
+}
+
+/* Mobile - Tablet */
+@media (max-width: 1024px) {
+    .hide-on-lower-tablet {
+        display: none;
+    }
+    
+}
+
+/* >= Tablet */
+@media (min-width: 740px) {
+    
+}
+
+
+/* PC medium resolution > */
+@media (min-width: 1113px) {
+    
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    
+}
+
+/* PC low resolution */
+@media (min-width: 1024px) and (max-width: 1239px) {
+    
+}
+
+/* > low resolution */
+@media (min-width: 1024px) {
+    .hide-on-lower-pc {
+        display: none;
+    }
+}

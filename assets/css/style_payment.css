@@ -1,0 +1,204 @@
+.app {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+
+/* Header */
+.app__header {
+    background-color: var(--background-header-color);
+}
+
+.app__header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primary-color);
+    height: 62px;
+}
+
+.app-header__logo {
+    height: 60%;
+}
+
+.app-header__logo img {
+    height: 100%;
+}
+
+.app-header__navbar {
+    display: flex;
+}
+
+.app-header-navbar__item {
+    color: #f1f1f1;
+}
+
+.app-header-navbar__item p {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.app-header-navbar__item + .app-header-navbar__item {
+    margin-left: 100px;
+}
+
+.item--active {
+    color: var(--primary-color);
+    position: relative;
+}
+
+.item--active p {
+    background-color: var(--primary-color);
+}
+
+.item--active::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -80px;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+/* Re-use page home */
+.app-header-main-cart__hotline {
+    display: flex;
+    align-items: center;
+}
+
+.app-header-main-cart__hotline > span {
+    font-size: 2.8rem;
+    padding-right: 10px;
+}
+
+.app-header-main-cart__hotline-sub > h2 {
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.app-header-main-cart__hotline-sub > p {
+    color: var(--text-color-light);
+}
+
+/* Body */
+.app__body {
+    padding: 24px 0;
+    background-color: var(--background-content-color);
+    min-height: 87vh;
+}
+
+.app-body__bill,
+.app-body__step-payment,
+.app-body__payment-type {
+    background-color: var(--white-color);
+    border-radius: 4px;
+    box-sizing: 1px 2px 2px var(--background-header-color);
+    padding: 18px 24px;
+}
+
+.app-body-bill__text,
+.app-body-step-payment__text,
+.app-body-payment-type__text {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 4rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 12px;
+}
+
+.app-body-payment-type__content-group {
+    display: flex;
+    align-items: center;
+}
+
+.app-body-payment-type__content label {
+    display: block;
+    width: 100%;
+    line-height: 3rem;
+}
+
+.app-body-step-payment-content__info {
+    line-height: 3rem;
+}
+
+.app-body__bill {
+    margin-top: 12px;
+}
+
+.app-body-bill__list-cart {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+
+.app-body-bill__list-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 8px;
+}
+
+.app-body-bill-list-item__name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.app-body-bill-list-item__price {
+    
+}
+
+.app-body-bill__total {
+    border-bottom: 1px dashed var(--border-color);
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+
+.app-body-bill__total-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.app-body-bill__total-payment {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.app-body-bill__total-payment span {
+    color: var(--primary-color);
+}
+
+
+/* Footer */
+.app__footer {
+    background-color: var(--background-header-color);
+    text-align: center;
+}
+
+.app__footer > p {
+    line-height: 4rem;
+}
+
+.app__footer a {
+    text-decoration: none;
+    color: currentColor;
+    transition: .2s ;
+}
+
+.app__footer a:hover {
+    color: var(--primary-color);
+}
+
+.app__footer a::before {
+    content: '© ';
+}

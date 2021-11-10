@@ -1,0 +1,29 @@
+.app {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    min-height: 100vh;
+}
+
+.app__login {
+    background-color: rgba(0, 0, 0, .55);
+    min-height: 100vh;
+}
+
+.app-login__form {
+    width: 500px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.app-login__logo {
+    width: 140px;
+    margin: 0 auto;
+}
+
+.app-login__logo > img {
+    width: 100%;
+}
+
+.modal-input__text a {
+    color: var(--white-color);
+}

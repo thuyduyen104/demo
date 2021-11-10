@@ -1,0 +1,12 @@
+.app {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    background-image: url(../images/bg-login-page.png);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.modal {
+    z-index: 0;
+    display: block;
+}
